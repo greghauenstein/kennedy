@@ -1,0 +1,472 @@
+/*
+Theme Name: Kennedy
+Theme URI: http://greghauenstein.com/themes/kennedy
+Description: A sharp, clean, minimalist theme built for political candidates.
+Author: greghauenstein
+Author URI: http://greghauenstein.com/
+Version: 0.5
+Tags: white, two-columns, fluid-width, responsive, bootstrap
+
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+/* Colors
+ * 
+ * Lightest Blue: #C3DCE8 rgba(195, 220, 232, 1)
+ * Robin's Egg: #7DB2CB rgba(125, 178, 203, 1)
+ * Obama Blue: #0079AA rgba(0, 121, 170, 1)
+ * Deep Blue: #004568 rgba(0, 69, 104, 1)
+ * Red: #C70032 rgba(199, 0, 50, 1)
+ * 
+ */
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+   font-family: "proxima-nova", Helvetica, Arial sans-serif; 
+   font-weight: normal;
+   background: #f1f1f1;
+   font-size: 14px;
+   line-height: 25px;
+   color: #222;
+}
+
+a {
+  color: #0079AA;
+}
+
+a:hover {
+  color: #C70032;
+}
+
+/* ------- Typography ------- */
+
+p, input, button {
+  font-family: "proxima-nova", Helvetica, Arial sans-serif; 
+}
+
+.nav li {
+  font-family: "proxima-nova", Helvetica, Arial sans-serif;
+}
+
+.navbar-brand {
+	font-family: "proxima-nova", Helvetica, Arial sans-serif;
+	font-weight: 900!important;
+	font-size: 30px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "proxima-nova", Helvetica, Arial sans-serif; 
+	font-weight: 400;
+}
+
+h1, h2, h3 {
+	font-weight: 700;
+}
+
+blockquote {
+	border-color: #aaa;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.notopmargin {
+  margin-top: 0;
+}
+
+.wht {
+	color: #fff!important;
+}
+
+.black {
+  font-weight: 900;
+}
+
+.ctr {
+	text-align: center;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+/* ------- Header ------- */
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-blue {
+  background: #004568;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-blue .navbar-header a.navbar-brand,
+.navbar-blue .nav li a {
+  color: #fff;
+}
+
+.navbar-blue .nav li a {
+  font-weight: 700;
+}
+
+.navbar-blue .nav li a:hover {
+  background: #0079aa;
+}
+
+.navbar-blue .nav li#menu-item-25 a {
+  background: #c70032;
+}
+
+.navbar-toggle {
+  color: #ffffff;
+}
+
+/* ------- Homepage ------- */
+
+#first-impression {
+  padding: 50px 0;
+  background: #C3DCE8;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #fff;
+}
+
+#mc-embedded-subscribe-form input.form-zip {
+  float: left;
+  margin-right: 10px;
+}
+
+h1.featured-overlay {
+  position: relative;
+  top: -100px;
+  margin-bottom: -80px;
+  background: #0079aa;
+  background: rgba(0, 121, 170, 0.65);
+  color: #fff;
+  padding: 10px 25px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+/* -------- Posts/Pages ------- */
+
+.entry {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+}
+
+#page-content p, #page-content li {
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 150%;
+}
+
+#page-content blockquote {
+	font-size: 18px;
+	line-height: 150%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #eaeaea;
+}
+
+#page-content blockquote p {
+	margin-bottom: 0;
+}
+
+.caption p {
+	font-size: 14px;
+	line-height: 150%;
+}
+
+ul.tag-list {
+	margin-left: 0;
+}
+
+li.post-tag {
+	display: inline;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+li.post-tag a, li.post-tag a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+li.post-tag:hover {
+	background: #444;
+}
+
+p.small, li.small, div.gfield_description {
+	font-size: 10px;
+	line-height: 100%;
+}
+
+#disclaimer {
+	width: 325px;
+	text-align: center;
+	margin: 15px auto;
+	padding: 5px;
+	border: 1px solid #ffffff;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.post-meta.well p, #disclaimer p {
+  margin-bottom: 0;
+}
+
+
+/* ------- Sidebar ------- */
+
+#sidebar {
+  margin-top: 20px;
+}
+
+.widget-wrap {
+  background: #C3DCE8;
+  border: 1px solid #b2cbd7;
+  padding: 15px;
+}
+
+#sidebar .widget-wrap {
+  margin-bottom: 15px;
+}
+
+.widget-title {
+  margin-top: 0;
+}
+
+
+/* ------- Footer ------- */
+
+footer {
+  margin-top: 25px;
+  padding: 50px 0;
+  background: #004568;
+  color: #fff;
+}
+
+/* ------- Buttons ------- */
+
+.btn-primary,
+.btn-blue {
+  background: #0079AA;
+  border-color: #0079AA;
+}
+
+.btn-primary:hover,
+.btn-blue:hover {
+  background: #004568;
+  border-color: #004568;
+}
+
+.btn-danger,
+.btn-red {
+  background: #C70032;
+  border-color: #C70032;
+}
+
+.btn-danger:hover,
+.btn-red:hover {
+  background: #A50011;
+  border-color: #A50011;
+}
+
+.btn-info,
+.btn-ltblue {
+  background: #7DB2CB;
+  border-color: #7DB2CB;
+}
+
+.btn-info:hover,
+.btn-ltblue:hover {
+  background: #5B90A9;
+  border-color: #5B90A9;
+}
+
+
+
+/* ------- Image classes ------- */
+
+img.alignleft {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+img.alignright {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+img.frame {
+	background: #fff;
+	border: 1px solid #b2cbd7;
+	padding: 5px;
+}
+
+label.gfield_label {
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel .item {-webkit-transition: opacity 1.5s; -moz-transition: opacity 1.53s; -ms-transition: opacity 1.5s; -o-transition: opacity 1.5s; transition: opacity 1.5s;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
+
+.fbcomments,.fb_iframe_widget,.fb_iframe_widget[style],.fb_iframe_widget iframe[style],.fbcomments iframe[style],.fb_iframe_widget span { width: 100%!important; }
+
+/*======= FORMS ======= */
+
+input.form-zip {
+  max-width: 100px;
+
+
+/*.gf_progressbar {
+	display: none;
+}*/
+
+.gform_wrapper {
+	margin: 0;
+}
+
+.gform_wrapper .gform_page_footer {
+	border: none!important;
+	margin-top: 0!important;
+	padding: 0;
+}
+
+.gf_page_steps {
+	text-align: center!important;
+}
+
+.gf_step_number {
+	display: block!important;
+	font-size: 14px!important;
+	background: #b8b8b8;
+	width: 18px;
+	margin: 5px 0 5px 11px;
+	color: #fff;
+	padding: 4px;
+	border-radius: 5em;
+	text-align: center;
+	font-weight: bold;
+	-webkit-transition: color 0.25s linear,background-color 0.25s linear;
+	-moz-transition: color 0.25s linear,background-color 0.25s linear;
+	transition: color 0.25s linear,background-color 0.25s linear;
+}
+
+.gf_step_active .gf_step_number {
+	background: #5bb75b;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.65);
+	-webkit-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.gform_wrapper .gf_progressbar_wrapper {
+	padding-bottom: 5px!important;
+}
+
+.gform_wrapper .gf_progressbar_wrapper h3.gf_progressbar_title {
+	text-align: center;
+	font-size: 16px!important;
+	line-height: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.gform_wrapper .top_label .gfield_label {
+	margin-bottom: 12px!important;
+}
+
+.gform_wrapper .gfield_radio li {
+	float: left;
+	min-height: 35px;
+	margin: 0 10px 10px 0!important;
+	padding: 0;	
+}
+
+.gform_wrapper ul.gfield_radio li input[type=radio] {
+	display: none;
+}
+
+.gform_wrapper ul.gfield_radio li input[type=radio]:checked + label {
+	background: #5bb75b;
+}
+
+.gform_wrapper .gfield_radio li label {
+	width: 80px!important;
+	padding: 15px 5px;
+	font-family: 'Gotham SSm 4r','Gotham SSm A','Gotham SSm B',"Helvetica Neue",Helvetica,Segoe,"Segoe UI","Segoe WP",Calibri,Arial,clean,sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	background: #008fc5;
+	border: 1px solid rgba(0, 0, 0, 0.35);
+	background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+	background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+	background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.3) 100%);
+	background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.1, rgba(0, 0, 0, 0.1)), color-stop(1, rgba(255, 255, 255, 0.2)));
+	-webkit-transition: background-color 0.15s linear,box-shadow 0.15s linear;
+	-moz-transition: background-color 0.15s linear,box-shadow 0.15s linear;
+	transition: background-color 0.15s linear,box-shadow 0.15s linear;
+	}
+	
+.gform_wrapper .gfield_radio li label:hover {	
+	background: #1297c9;
+	color: #fff;
+	-webkit-transition: background 0.1s linear;
+	-moz-transition: background 0.1s linear;
+	transition: background 0.1s linear;
+	}
+	
+.ginput_full input {
+	margin-bottom: 5px!important;
+}
+
+.gform_wrapper input[type=text] {
+	font-size: 14px!important;
+}
+
+@media (max-width: 990px) { 
+  #mc-embedded-subscribe {
+	width: 400px;
+	margin: 15px auto 0 auto;
+  }
+}
+
+@media (max-width: 770px) { }
+
+@media (max-width: 480px) { }
+
+@media (max-width: 370px) {
+	a.brand { font-size: 15px!important; }
+}
+
