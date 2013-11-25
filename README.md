@@ -1,7 +1,9 @@
 Kennedy
 ==========
 
-A sharp, clean, minimalist theme built for political candidates. This really isn't ready for public consumption yet so give me some time ya greedy vultures.
+A sharp, clean, minimalist Wordpress theme built for political candidates. 
+
+This really isn't ready for public consumption yet so give me some time ya greedy vultures.
 
 ### Roadmap
 1. Stripe donation integration
