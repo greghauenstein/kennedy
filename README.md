@@ -7,5 +7,6 @@ A sharp, clean, minimalist theme built for political candidates. This really isn
 * 1. Stripe donation integration
 * 2. Better commenting
 * 3. Widgetize front page
-* 4. Make it generic
-* 5. Some actual documentation and not just my ramblings.
+* 4. Admin panel with happy fun time options
+* 5. Make it generic
+* 6. Some actual documentation and not just my ramblings.
