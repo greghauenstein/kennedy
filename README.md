@@ -3,15 +3,16 @@ Kennedy
 
 A sharp, clean, minimalist Wordpress theme built for political candidates. 
 
-This really isn't ready for public consumption yet so give me some time ya greedy vultures.
+This isn't ready for public consumption yet so give me some time ya greedy vultures.
 
 ### Roadmap
-1. Stripe donation integration
-2. Better commenting
-3. Widgetize front page
-4. Admin panel with happy fun time options
-5. Make it generic
-6. Some actual documentation and not just my ramblings.
+1. Archive template and fix donation form template.
+2. Stripe donation integration
+3. Better commenting
+4. Widgetize front page
+5. Admin panel with happy fun time options
+6. Make it generic
+7. Some actual documentation and not just my ramblings.
 
 <pre>             ..... ..                                          
           XXXXX:::XXXXXXXXXXXXX                                 
