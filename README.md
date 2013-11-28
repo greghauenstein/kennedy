@@ -14,7 +14,8 @@ This isn't ready for public consumption yet so give me some time ya greedy vultu
 6. Make it generic
 7. Some actual documentation and not just my ramblings.
 
-<pre>             ..... ..                                          
+<pre style="border:none!important; background: #fff!important;">
+               ..... ..                                          
           XXXXX:::XXXXXXXXXXXXX                                 
         XXX:XXXXXXXXXXXXXXXXXXXXXX:                             
       XXXXX:XXXXXXX:XXXXXXX:XXXXX::      
