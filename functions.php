@@ -9,15 +9,29 @@ add_image_size( 'single_latest', 170, 120, true ); /* ===== SETS FEATURED IMAGE 
 
 /* ========================================= SIDEBAR ========================================= */
 
-register_sidebar(array(
-	'name' => 'Sidebar',
-	'id' => 'Sidebar',
-	'description' => __('These widgets will show up on every page and post, excluding the home page.'),
-	'before_widget' => '<div class="span4 thumbnail"><div class="widget-wrap">',
-	'after_widget' => '</div></div>',
-	'before_title' => '<h3 class="ctr widget-title">',
-	'after_title' => '</h3>'
-));
+if ( function_exists('register_sidebar') ) {
+
+   register_sidebar(array(
+	'name' 			=> 'Main Sidebar',
+	'id' 			=> 'Sidebar',
+	'description'   => __('These widgets will show up on every page and post, excluding the home page.'),
+	'before_widget' => '',
+	'after_widget'  => '',
+	'before_title'  => '',
+	'after_title'   => ''
+    ));
+
+   register_sidebar(array(
+	'name' 			=> 'Front Page Columns',
+	'id' 			=> 'front',
+	'description'   => __('These columns are on the front page.'),
+	'before_widget' => '<div class="col-sm-4 col-md-4"><div class="thumbnail">',
+	'after_widget'  => '</div></div>',
+	'before_title'  => '',
+	'after_title'   => ''
+   ));
+
+}
 
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
@@ -102,4 +116,8 @@ jQuery('#input_<?php echo $form['id']?>_<?php echo $field['id']?>').attr('placeh
 </script>
 <?php
 }
+
+
+
+
 ?>
