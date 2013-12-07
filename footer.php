@@ -2,7 +2,7 @@
   <div class="container">
 	<div class="row">
 	  <div class="col-md-12">
-		<p class="caps ctr">P.O. Box 44, Sherrill, IA 52073</p>
+		<p class="caps ctr">1064 Rush St. Dubuque, IA 52003</p>
 
 		<div id="disclaimer">
 			<p class="caps">Paid for by Friends of Abby Finkenauer</p>
