@@ -6,11 +6,11 @@ A sharp, clean, minimalist Wordpress theme built for political candidates.
 This isn't ready for public consumption yet so give me some time ya greedy vultures.
 
 ### Roadmap
-1. Archive template and fix donation form template.
+1. Archive template and donation form templates.
 2. Stripe donation integration
-3. Better commenting
+3. Facebook commenting
 4. Widgetize front page
-5. Admin panel with happy fun time options
+5. Theme customization options
 6. Make it generic
 7. Some actual documentation and not just my ramblings.
 

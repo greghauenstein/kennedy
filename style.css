@@ -36,14 +36,17 @@ body {
    font-size: 15px;
    line-height: 24px;
    color: #222;
+   padding-top: 40px;
 }
 
 a {
   color: #0079AA;
+  transition: color .15s ease;
 }
 
 a:hover {
   color: #C70032;
+  text-decoration: none;
 }
 
 /* ------- Typography ------- */
@@ -60,6 +63,7 @@ p, input, button {
 	font-family: "proxima-nova", Helvetica, Arial sans-serif;
 	font-weight: 900!important;
 	font-size: 30px;
+	text-transform: uppercase;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -113,6 +117,7 @@ blockquote {
 .navbar-blue .navbar-header a.navbar-brand,
 .navbar-blue .nav li a {
   color: #fff;
+  transition: background .15s ease;
 }
 
 .navbar-blue .nav li a {
@@ -123,8 +128,12 @@ blockquote {
   background: #0079aa;
 }
 
-.navbar-blue .nav li#menu-item-25 a {
+.navbar-blue .nav li a[title="Donate"] {
   background: #c70032;
+}
+
+.navbar-blue .nav li a[title="Donate"]:hover {
+  background: #e70032;
 }
 
 .navbar-toggle {
@@ -134,21 +143,21 @@ blockquote {
 /* ------- Homepage ------- */
 
 #first-impression {
-  padding: 50px 0;
-  background: #C3DCE8;
+  padding: 0;
   margin-bottom: 25px;
   border-bottom: 1px solid #fff;
+  color: #004568;
 }
 
-#mc-embedded-subscribe-form input.form-zip {
-  float: left;
-  margin-right: 10px;
+#signupform-wrapper {
+	background: rgba(195, 220, 232, 0.7);
+	padding: 100px 15px;
 }
 
 h1.featured-overlay {
   position: relative;
   top: -100px;
-  margin-bottom: -80px;
+  margin-bottom: -70px;
   background: #0079aa;
   background: rgba(0, 121, 170, 0.65);
   color: #fff;
@@ -259,6 +268,10 @@ footer {
 
 /* ------- Buttons ------- */
 
+.btn {
+	transition: background .15s ease;
+}
+
 .btn-primary,
 .btn-blue {
   background: #0079AA;
@@ -338,15 +351,9 @@ label.gfield_label {
 
 .fbcomments,.fb_iframe_widget,.fb_iframe_widget[style],.fb_iframe_widget iframe[style],.fbcomments iframe[style],.fb_iframe_widget span { width: 100%!important; }
 
-/*======= FORMS ======= */
-
-input.form-zip {
-  max-width: 100px;
+/*======= FORMS ======= 
 
 
-/*.gf_progressbar {
-	display: none;
-}*/
 
 .gform_wrapper {
 	margin: 0;
@@ -455,16 +462,26 @@ input.form-zip {
 	font-size: 14px!important;
 }
 
-@media (max-width: 990px) { 
-  #mc-embedded-subscribe {
-	width: 400px;
-	margin: 15px auto 0 auto;
-  }
+*/
+
+@media (max-width: 990px) { }
+
+@media (max-width: 767px) { 
+	#first-impression {
+		background: #C3DCE8;
+		background-image: none!important;
+		padding: 30px 10px 0 10px;
+	}
+	
+	#signupform-wrapper {
+		background: none;
+		padding: 0;
+	}
 }
 
-@media (max-width: 770px) { }
-
-@media (max-width: 480px) { }
+@media (max-width: 480px) {
+	
+}
 
 @media (max-width: 370px) {
 	a.brand { font-size: 15px!important; }

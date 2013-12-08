@@ -10,6 +10,8 @@
 		  ?>
 		</title>
 		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<!--[if lt IE 9]>
 		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -49,7 +51,7 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-blue" role="navigation">
+		<nav class="navbar navbar-blue navbar-fixed-top" role="navigation">
 		  <div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -57,7 +59,7 @@
 				<span class="sr-only">Menu</span>
 				<span class="glyphicon glyphicon-tasks"></span> Menu
 			  </button>
-			  <a class="navbar-brand" href="/">VOTE ABBY</a>
+			  <a class="navbar-brand" href="/"><?php bloginfo('name'); ?></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -65,9 +67,9 @@
 							    wp_nav_menu( array(
 							        'menu'              => 'primary',
 							        'theme_location'    => 'primary',
-							        'depth'             => 2,
+							        'depth'             =>  2,
 							        'container'         => 'div',
-							        'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+							        'container_class'   => 'navbar-ex1-collapse',
 							        'menu_class'        => 'nav navbar-nav navbar-right',
 							        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 							        'walker'            => new wp_bootstrap_navwalker())

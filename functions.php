@@ -7,6 +7,57 @@ add_image_size( 'blog_image', 590, 400, true ); /* ===== SETS FEATURED IMAGE SIZ
 add_image_size( 'slide_image', 600, 300, true ); /* ===== SETS FEATURED IMAGE SIZE  ===== */
 add_image_size( 'single_latest', 170, 120, true ); /* ===== SETS FEATURED IMAGE SIZE  ===== */
 
+function kennedy_customize_register( $wp_customize ) {
+	$wp_customize->add_section('kennedy_home_page', array(
+	    'title'    => __('Home Page Options', 'Kennedy'),
+	    'priority' => 150,
+	));
+	
+		$wp_customize->add_setting('first_impressions_bg', array(
+			'default'           => 'http://placehold.it/400x300/eaeaea/aaaaaa&text=Upload+image',
+			'capability'        => 'edit_theme_options',
+			'type' 				=> 'theme_mod',
+		));
+			$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'first_impressions_bg', array(
+			    'label'    => __('Background Image', 'Kennedy'),
+			    'section'  => 'kennedy_home_page',
+			    'settings' => 'first_impressions_bg',
+			)));
+		
+		$wp_customize->add_setting('first_impressions_mobile_fallback', array(
+		        'default'           => 'http://placehold.it/400x300/eaeaea/aaaaaa&text=Upload+image',
+		        'capability'        => 'edit_theme_options',
+		        'type'           	=> 'theme_mod', 
+		));
+		    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'first_impressions_mobile_fallback', array(
+		        'label'    => __('Mobile Fallback Image', 'Kennedy'),
+		        'section'  => 'kennedy_home_page',
+		        'settings' => 'first_impressions_mobile_fallback',
+		    )));	
+}
+add_action( 'customize_register', 'kennedy_customize_register' );
+    
+function kennedy_customize_css() { ?>
+	<style type="text/css">
+    	#first-impression { 
+        	background-color: #C3DCE8;
+            background-image: url(<?php echo get_theme_mod('first_impressions_bg'); ?>);
+            background-repeat: no-repeat;
+            background-position: center center; 
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+<?php }
+
+add_action( 'wp_head', 'kennedy_customize_css');
+
+function first_impressions_mobile_fallback() { ?>
+	<img class="frame visible-xs" src="<?php echo get_theme_mod('first_impressions_mobile_fallback'); ?>" />
+<?php }
+
 /* ========================================= SIDEBAR ========================================= */
 
 if ( function_exists('register_sidebar') ) {
@@ -37,7 +88,7 @@ if ( function_exists('register_sidebar') ) {
 require_once('wp_bootstrap_navwalker.php');
 
 register_nav_menus( array(
-    'primary' => __( 'Primary Menu', 'THEMENAME' ),
+    'primary' => __( 'Primary Menu', 'Kennedy' ),
 ) );
 
 add_theme_support('post-thumbnails', array('post'));
