@@ -97,8 +97,12 @@ blockquote {
 	text-align: center;
 }
 
-.caps {
+.caps, .upper {
 	text-transform: uppercase;
+}
+
+.spaced {
+	letter-spacing: 1px;
 }
 
 /* ------- Header ------- */
@@ -164,6 +168,32 @@ h1.featured-overlay {
   padding: 10px 25px;
   margin-left: 6px;
   margin-right: 6px;
+}
+
+#sociallinks {
+	text-align: center;
+}
+
+#sociallinks a {
+	margin: 5px;
+}
+
+#front-page-articles {
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+#front-page-articles article {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 30px;
+}
+
+#front-page-articles article:last-of-type {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 /* -------- Posts/Pages ------- */
@@ -260,10 +290,16 @@ p.small, li.small, div.gfield_description {
 /* ------- Footer ------- */
 
 footer {
-  margin-top: 25px;
-  padding: 50px 0;
-  background: #004568;
-  color: #fff;
+	margin-top: 25px;
+	color: #fff;
+	border-top: 1px solid #fff;
+}
+
+.blue-overlay {
+	background: rgba(0, 69, 104, 0.95);
+	min-height: 100%;
+	min-width: 100%;
+	padding: 50px 0;
 }
 
 #footer-nav {

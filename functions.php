@@ -26,7 +26,23 @@ function kennedy_customize_register( $wp_customize ) {
 		        'label'    => __('Mobile Fallback Image', 'Kennedy'),
 		        'section'  => 'kennedy_home_page',
 		        'settings' => 'first_impressions_mobile_fallback',
-		    )));	
+		    )));
+	
+	$wp_customize->add_section('kennedy_footer', array(
+	    'title'    => __('Footer Options', 'Kennedy'),
+	    'priority' => 250,
+	));
+	
+		$wp_customize->add_setting('footer_bg', array(
+			'default'           => '',
+			'capability'        => 'edit_theme_options',
+			'type' 				=> 'theme_mod',
+		));
+			$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'footer_bg', array(
+			    'label'    => __('Background Image', 'Kennedy'),
+			    'section'  => 'kennedy_footer',
+			    'settings' => 'footer_bg',
+			)));	
 }
 add_action( 'customize_register', 'kennedy_customize_register' );
     
@@ -41,6 +57,17 @@ function kennedy_customize_css() { ?>
              -moz-background-size: cover;
              -o-background-size: cover;
             background-size: cover;
+        }
+        
+        footer {
+        	background-color: #004568;
+        	background-image: url(<?php echo get_theme_mod('footer_bg'); ?>);
+        	background-repeat: no-repeat;
+        	background-position: center center; 
+        	 -webkit-background-size: cover;
+        	 -moz-background-size: cover;
+        	 -o-background-size: cover;
+        	background-size: cover;
         }
     </style>
 <?php }

@@ -17,10 +17,31 @@
 			<div>
 			  <?php include('emailform.php'); ?>
 			</div>
+			<div id="sociallinks">
+				<?php if(isset($options['fburl'])) { ?>
+					<a href="<?php echo $options['fburl'] ?>" target="new">
+						<img id="socialicons" src="<?php bloginfo('template_url') ?>/img/icon-fb.png" width="50" alt="Facebook Profile <?php echo $options['fburl'] ?>">
+					</a>
+				<?php } ?>
+				<?php if(isset($options['twurl'])) { ?>
+					<a href="<?php echo $options['twurl'] ?>" target="new">
+						<img id="socialicons" src="<?php bloginfo('template_url') ?>/img/icon-tw.png" width="50" alt="Twitter Profile <?php echo $options['twurl'] ?>">
+					</a>
+				<?php } ?>
+				<?php if(isset($options['igurl'])) { ?>
+					<a href="<?php echo $options['igurl'] ?>" target="new">
+						<img id="socialicons" src="<?php bloginfo('template_url') ?>/img/icon-ig.png" width="50" alt="Instagram Profile <?php echo $options['igurl'] ?>">
+					</a>
+				<?php } ?>
+			</div> 
 		  </div>
 	  </div>
 	</div><!-- Close .row -->
   </div>
+</section>
+
+<section id="testimonials">
+
 </section>
 
 <section id="little-boxes">
@@ -32,12 +53,32 @@
 	
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-			<?php if(isset($options['fburl'])) { ?>
+			<h2 class="ctr">Latest news</h2>
+			<div id="front-page-articles">
+				<?php 
+				  $temp = $wp_query; 
+				  $wp_query = null; 
+				  $wp_query = new WP_Query(); 
+				  $wp_query->query('showposts=3&post_type=post'); 
 				
-			<?php } ?>
+				  while ($wp_query->have_posts()) : $wp_query->the_post(); 
+				?>			
+				<article class="article">
+			    	<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			    	<p class="text-muted upper spaced"><?php the_time('D, M j, Y') ?></p>
+			    	<?php the_excerpt(); ?>
+			    	<p><a href="<?php the_permalink(); ?>">Read the full post &raquo;</a></p>
+			    </article>			
+			<?php endwhile; ?>
+			</div>
+			
+			<?php 
+			  $wp_query = null; 
+			  $wp_query = $temp;  // Reset
+			?>
 		</div>
 	</div>
-	
   </div><!-- Close container -->		
 </section>	
+
 <?php include('footer.php') ?>

@@ -6,7 +6,7 @@
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
 				<h1 class="page-title"><?php the_title(); ?></h1>
-				<p><span class="glyphicon glyphicon-calendar"></span> <?php the_time('F jS, Y') ?> &nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-comment"></span> <a href="#respond">Comment on this post!</a></p>
+				<p><span class="glyphicon glyphicon-calendar"></span> <?php the_time('F jS, Y') ?> &nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-comment"></span></p>
 				
 				<?php the_content(); ?>
 				
@@ -14,8 +14,14 @@
 				
 				<?php endwhile; endif; ?>
 				
-				<?php comments_template(); ?>
-		
+			<p><strong><a href="/blog">&laquo; Back to the blog.</a></strong></p>
+			
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<h4>Your thoughts</h4>
+					<?php comments_template(); ?>
+				</div>
+			</div>
 		</div>
 		
 		<div id="sidebar" class="col-md-4">
