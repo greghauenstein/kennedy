@@ -10,6 +10,7 @@
 		  ?>
 		</title>
 		
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!--[if lt IE 9]>
@@ -45,12 +46,13 @@
 			  
 	  <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/bootstrap.min.css" type="text/css" />
 	  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" type="text/css" />
-				
+	  <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/donation-form.css" type="text/css" />
+	  	  
 	  <?php wp_head(); ?>
 	
 	</head>
 
-	<body>
+	<body>		
 		<nav class="navbar navbar-blue navbar-fixed-top" role="navigation">
 		  <div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->

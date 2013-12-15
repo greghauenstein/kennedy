@@ -1,12 +1,5 @@
 <?php
 
-/* ========================================= Featured Images ========================================= */
-
-add_theme_support( 'post-thumbnails', array( 'post', 'slides' ) ); /* ===== ADDS FEATURED IMAGE TO PAGES ===== */
-add_image_size( 'blog_image', 590, 400, true ); /* ===== SETS FEATURED IMAGE SIZE  ===== */
-add_image_size( 'slide_image', 600, 300, true ); /* ===== SETS FEATURED IMAGE SIZE  ===== */
-add_image_size( 'single_latest', 170, 120, true ); /* ===== SETS FEATURED IMAGE SIZE  ===== */
-
 function kennedy_customize_register( $wp_customize ) {
 	$wp_customize->add_section('kennedy_home_page', array(
 	    'title'    => __('Home Page Options', 'Kennedy'),
@@ -25,7 +18,7 @@ function kennedy_customize_register( $wp_customize ) {
 			)));
 		
 		$wp_customize->add_setting('first_impressions_mobile_fallback', array(
-		        'default'           => 'http://placehold.it/400x300/eaeaea/aaaaaa&text=Upload+image',
+		        'default'           => 'http://placehold.it/1200x900/eaeaea/aaaaaa&text=Upload+image',
 		        'capability'        => 'edit_theme_options',
 		        'type'           	=> 'theme_mod', 
 		));
@@ -89,6 +82,7 @@ require_once('wp_bootstrap_navwalker.php');
 
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'Kennedy' ),
+    'footer'  => __( 'Footer Meny', 'Kennedy' ),
 ) );
 
 add_theme_support('post-thumbnails', array('post'));
@@ -168,7 +162,6 @@ jQuery('#input_<?php echo $form['id']?>_<?php echo $field['id']?>').attr('placeh
 <?php
 }
 
-
-
+$options = get_option( 'kennedy_theme_options' );
 
 ?>

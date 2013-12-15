@@ -1,0 +1,217 @@
+#myTab {
+        background: #C3DCE8;
+        width: auto;
+        margin: 0 auto 0 auto;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        padding-top: 20px;
+}
+
+#myTab li {
+        width: 33%;
+        margin: 5px 0 15px 0;
+}
+
+#myTab li a {
+	color: #000;
+}
+
+span.tab-number {
+        text-align: center;
+        display: block;
+        padding: 5px;
+        background: #7DB2CB;
+        color: #fff;
+        width: 30px;
+        margin: 0 auto;
+         -moz-border-radius: 20px;
+         -webkit-border-radius: 20px;
+        border-radius: 20px;
+        font-weight: 700;
+}
+
+
+.nav-tabs>li>a {
+        padding: 0;
+        border: none;
+        color: #000;
+}
+
+.nav-tabs>li>a:hover, .nav-tabs>li.active>a:hover {
+        background: none!important;
+        border: none;
+}
+
+.nav-tabs>li.active>a {
+        background: transparent;
+        border: none;
+}
+
+#myTab li.active span.tab-number {
+        background: #fff;
+        color:  #0079AA;        
+}
+
+.tab-content {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-top: none;
+        padding: 15px;
+}
+
+.form-row {
+        margin-bottom: 5px;
+        clear: both;
+}
+
+.field-left {
+        float: left;
+        margin-right: 20px;
+}
+
+.fielf-right {
+        float: left;
+}
+
+.donation-form .form-first-name,
+.donation-form .form-last-name,
+.donation-form .form-email,
+.donation-form .form-phone,
+.donation-form .form-city,
+.donation-form .form-state,
+.donation-form .form-zip,
+.donation-form .form-employer,
+.donation-form .form-occupation,
+.donation-form .form-number,
+.donation-form .form-cvc {
+        display: inline-block;
+}
+
+input.other {
+        margin-bottom: 0;
+}
+
+.donation-form input.first-name,
+.donation-form input.last-name,
+.donation-form input.email,
+.donation-form input.phone,
+.donation-form input.employer,
+.donation-form input.occupation {
+        width: 158px;
+}
+
+input.address {
+        width: 320px;
+}
+
+input.city {
+    width: 145px;
+}
+
+input.card-number {
+	width: 165px;
+}
+
+input.state,
+input.zip,
+input.card-cvc {
+        width: 70px;
+}
+
+select.state,
+select.card-expiry-month,
+select.card-expiry-year {
+        width: 95px!important;
+}
+
+select.card-expiry-month,
+select.card-expiry-year {
+	float: left;
+	margin-right: 5px;
+}
+
+input[type=radio] {
+        display: none;
+}
+
+input.amount-other {
+        font-size: 20px;
+        padding: 15px;
+        width: 300px;
+        margin-left: 13px;   
+}
+
+.form-amount label {
+		background: #0079AA;
+		border: 1px solid #004568;
+		color: #fff;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.85);
+		font-weight: 700;
+        padding: 15px;
+        height: 55px;
+        width: 88px;
+        font-size: 20px;
+        text-align: center;
+         cursor: pointer;
+        -webkit-transition: background-color 0.15s linear,box-shadow 0.15s linear;
+        -moz-transition: background-color 0.15s linear,box-shadow 0.15s linear;
+        transition: background-color 0.15s linear,box-shadow 0.15s linear;
+        display: inline-block;
+        margin-left: 13px;
+        margin-bottom: 15px;
+        }
+        
+.form-amount label:hover, input[type=radio]:checked + label {        
+	background: #7DB2CB;
+    color: #fff;
+     -webkit-transition: background 0.1s linear;
+     -moz-transition: background 0.1s linear;
+    transition: background 0.1s linear;
+}
+
+#name label, #payment label, form.signup label {
+        font-weight: 700;
+}
+
+.btn, input[type="text"], input[type="email"] {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+a.next-link {
+    text-align: center;
+    font-weight: 700;
+    width: 150px;
+    padding: 10px 0;
+    margin-top: 15px;
+    margin-left: 90px;
+    background-color: #004568;
+    border: none;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    -webkit-transition: background-color 0.15s linear,box-shadow 0.15s linear;
+    -moz-transition: background-color 0.15s linear,box-shadow 0.15s linear;
+    transition: background-color 0.15s linear,box-shadow 0.15s linear;
+}
+
+a.next-link:hover {
+	background-color: #C70032;
+	color: #fff;
+	
+}
+
+button#donate {
+	font-weight: 700;
+	margin-top: 15px;
+	background: #C70032;
+	color: #fff;
+	-webkit-transition: background-color 0.15s linear,box-shadow 0.15s linear;
+	-moz-transition: background-color 0.15s linear,box-shadow 0.15s linear;
+	transition: background-color 0.15s linear,box-shadow 0.15s linear;
+}
+
+button#donate:hover {
+	background: #E90000;    
+}
