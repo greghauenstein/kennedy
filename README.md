@@ -8,7 +8,7 @@ This isn't ready for public consumption yet so give me some time ya greedy vultu
 ### Roadmap
 1. ~~Archive template and donation form templates.~~
 2. Stripe donation integration
-3. ~~Facebook commenting
+3. Facebook commenting
 4. ~~Widgetize front page~~
 5. Theme customization options
 6. ~~Make it generic~~
