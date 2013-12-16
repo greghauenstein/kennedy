@@ -17,4 +17,4 @@
 		</div>
 	</div>
   </div>
-<?php get_footer(); ?>
+<?php include('footer.php'); ?>

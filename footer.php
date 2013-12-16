@@ -24,6 +24,8 @@
 			<div id="disclaimer">
 				<p class="caps">Paid for by <?php echo $options['committee_name'] ?></p>
 			</div>
+			
+			<small class="ctr">Copyright &copy; <?php echo date('Y') ?> <?php echo $options['committee_name'] ?>. All Rights Reserved.</small>
 		  </div>
 		</div>
 	  </div>

@@ -6,7 +6,7 @@
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
 				<h1 class="page-title"><?php the_title(); ?></h1>
-				<p><span class="glyphicon glyphicon-calendar"></span> <?php the_time('F jS, Y') ?> &nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-comment"></span></p>
+				<p><span class="glyphicon glyphicon-calendar"></span> <?php the_time('F jS, Y') ?></p>
 				
 				<?php the_content(); ?>
 				
@@ -30,4 +30,4 @@
 	</div>
   </div>
 
-<?php get_footer(); ?>
+<?php include('footer.php'); ?>

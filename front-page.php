@@ -18,17 +18,17 @@
 			  <?php include('emailform.php'); ?>
 			</div>
 			<div id="sociallinks">
-				<?php if(isset($options['fburl'])) { ?>
+				<?php if(isset($options['fburl']) && $options['fburl'] !== '') { ?>
 					<a href="<?php echo $options['fburl'] ?>" target="new">
 						<img id="socialicons" src="<?php bloginfo('template_url') ?>/img/icon-fb.png" width="50" alt="Facebook Profile <?php echo $options['fburl'] ?>">
 					</a>
 				<?php } ?>
-				<?php if(isset($options['twurl'])) { ?>
+				<?php if(isset($options['twurl']) && $options['twurl'] !== '') { ?>
 					<a href="<?php echo $options['twurl'] ?>" target="new">
 						<img id="socialicons" src="<?php bloginfo('template_url') ?>/img/icon-tw.png" width="50" alt="Twitter Profile <?php echo $options['twurl'] ?>">
 					</a>
 				<?php } ?>
-				<?php if(isset($options['igurl'])) { ?>
+				<?php if(isset($options['igurl']) && $options['igurl'] !== '') { ?>
 					<a href="<?php echo $options['igurl'] ?>" target="new">
 						<img id="socialicons" src="<?php bloginfo('template_url') ?>/img/icon-ig.png" width="50" alt="Instagram Profile <?php echo $options['igurl'] ?>">
 					</a>
@@ -41,7 +41,14 @@
 </section>
 
 <section id="testimonials">
-
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+				<p class="lead ctr"><em>This is where a nice quote about you will go. Oh isn't it nice? Yes, it is very nice.</em></p>
+				<p class="ctr upper"><strong>Person Who Said It</strong></p>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section id="little-boxes">
@@ -81,4 +88,4 @@
   </div><!-- Close container -->		
 </section>	
 
-<?php include('footer.php') ?>
+<?php include('footer.php'); ?>

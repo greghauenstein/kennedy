@@ -2,9 +2,7 @@
 /*
 Template Name: Full width
 */
-?>
-
-<?php get_header(); ?>
+get_header(); ?>
   <div class="container">
 	<div class="page-container row">
 		<div id="page-content" class="col-md-8 col-md-8-offset-2 col-sm-8 col-sm-offset-2">		
@@ -18,4 +16,4 @@ Template Name: Full width
 		</div>
 	</div>
   </div>
-<?php get_footer(); ?>
+<?php include('footer.php'); ?>

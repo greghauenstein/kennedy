@@ -2,9 +2,8 @@
 /*
 Template Name: Donation Page
 */
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
   <div class="container">
 	<div class="page-container row" style="margin-bottom: 25px;">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -40,4 +39,5 @@ Template Name: Donation Page
 		</div>
 	</div>
   </div>
-<?php get_footer(); ?>
+  
+<?php include('footer.php'); ?>

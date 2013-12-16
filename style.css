@@ -148,8 +148,6 @@ blockquote {
 
 #first-impression {
   padding: 0;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #fff;
   color: #004568;
 }
 
@@ -171,11 +169,25 @@ h1.featured-overlay {
 }
 
 #sociallinks {
-	text-align: center;
+	padding-top: 15px;
+	border-top:  1px solid #C3DCE8;
+	margin-top:  10px;
 }
 
 #sociallinks a {
-	margin: 5px;
+	margin-right: 5px;
+}
+
+#sociallinks a:last-of-type {
+	margin-right: 0;
+}
+
+#testimonials {
+	background: #fff;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 20px 0;
+	margin-bottom: 25px;
 }
 
 #front-page-articles {
